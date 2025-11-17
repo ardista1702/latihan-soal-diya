@@ -107,7 +107,7 @@ class SoalGedungSolver {
     atau saat ini bilangan - dan sebelumnya +
     maka total bertambah 1(karena terjadi perubahan warna)
     */
-      if ((curr >= 0 && prev < 0) || (curr < 0 && prev >= 0)) {
+      if ((curr > 0 && prev < 0) || (curr < 0 && prev > 0)) {
         total++;
       }
     }
