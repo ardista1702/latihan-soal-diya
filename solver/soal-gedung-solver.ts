@@ -74,7 +74,6 @@ class SoalGedungSolver {
 
     return res;
   }
-//sangat tidak efisien kalo jumlah lantai sampai 500.000,karena akan ada 2,5 juta operasi untuk melakukan sort dengan metode bubble sort
   private sortDecrease(arr: number[]) {
     const n = arr.length;
 
