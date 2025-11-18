@@ -4,7 +4,6 @@ function cleanInput(input: string): string[] {
 
   for (let i = 0; i < n; ) {
     if (input[i] === " ") {
-      i++;
       continue;
     }
 
@@ -119,12 +118,12 @@ function run(input: string) {
 
 function main() {
   const input = "2 5 7 -2 6 9 -3 8 11 -9 2 5 18 17 -15 4";
-   console.log(cleanInput(input));
-//     const cleanedInput = cleanInput(input);
-//     const castedInput = castInputToNumber(cleanedInput);
-//     const cases = getCases(castedInput);
-//     console.log(cases);
-// run(input);
+  console.log(cleanInput(input));
+  //     const cleanedInput = cleanInput(input);
+  //     const castedInput = castInputToNumber(cleanedInput);
+  //     const cases = getCases(castedInput);
+  //     console.log(cases);
+  // run(input);
 }
 
-main()
+main();
