@@ -13,7 +13,7 @@ class SoalGedungSolver {
       return;
     }
     for (let i = 0; i < cases.length; i++) {
-      const case_ = [...cases[i]];
+      const case_ = cases[i];
       this.sortDecrease(case_);
       //count total color change
       const totalChange = this.countTotalColorChange(case_);
