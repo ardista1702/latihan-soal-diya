@@ -7,6 +7,11 @@ class SoalGedungSolver {
     const cleanedInput: string[] = this.cleanInput(this.input);
     const castedInput: number[] = this.castInputToNumber(cleanedInput);
     const cases: number[][] = this.getCases(castedInput);
+    const totalCases = castedInput[0];
+    if (totalCases != cases.length) {
+      console.log("jumlah case yang tersedia tidak mencukupi");
+      return;
+    }
     for (let i = 0; i < cases.length; i++) {
       const case_ = [...cases[i]];
       this.sortDecrease(case_);
@@ -70,6 +75,12 @@ class SoalGedungSolver {
       res.push(caseFloor);
 
       i = i + 1 + total;
+      if (total != caseFloor.length) {
+        console.log(
+          "jumlah lantai yang tersedia tidak sama dengan case yang diberikan"
+        );
+        return [];
+      }
     }
 
     return res;
